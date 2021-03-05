@@ -22,6 +22,9 @@ $(call inherit-product, vendor/motorola/nio/nio-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+# A/B
+AB_OTA_PARTITIONS += vendor_boot
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -48,6 +51,7 @@ PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.ramdisk.qcom \
     init.mmi.laser.sh \
     init.mmi.overlay.rc
 
