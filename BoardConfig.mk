@@ -34,5 +34,9 @@ TARGET_KERNEL_CONFIG := vendor/nio_defconfig
 # NFC
 TARGET_USES_NQ_NFC := true
 
+# Partitions
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
