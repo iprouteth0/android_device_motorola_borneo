@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_racer.mk
+    $(LOCAL_DIR)/omni_nio.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_racer-user \
-    omni_racer-userdebug \
-    omni_racer-eng
+    omni_nio-user \
+    omni_nio-userdebug \
+    omni_nio-eng
