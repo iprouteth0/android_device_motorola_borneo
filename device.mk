@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/motorola/sm7250-common/common.mk)
+$(call inherit-product, device/motorola/sm8250-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
+$(call inherit-product, vendor/motorola/nio/nio-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
@@ -31,16 +31,11 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 PRODUCT_PACKAGES += \
-	NoCutoutOverlay
+    NoCutoutOverlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/mixer_paths_madera_evt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_madera_evt.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer
 
 # FM
 PRODUCT_PACKAGES += \
@@ -57,15 +52,12 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc
 
 # NFC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nci-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/st21nfc_conf_ds.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ds.txt \
-    $(LOCAL_PATH)/nfc/st21nfc_conf_ss.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf_ss.txt
+PRODUCT_PACKAGES += \
+     android.hardware.nfc@1.2-service
 
-# Permissions
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

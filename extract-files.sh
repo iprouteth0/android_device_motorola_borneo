@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=racer
-export DEVICE_COMMON=sm7250-common
+export DEVICE=nio
+export DEVICE_COMMON=sm8250-common
 export VENDOR=motorola
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

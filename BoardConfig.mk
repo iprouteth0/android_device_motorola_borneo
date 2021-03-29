@@ -14,36 +14,24 @@
 # limitations under the License.
 #
 
--include device/motorola/sm7250-common/BoardConfigCommon.mk
+-include device/motorola/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/racer
+DEVICE_PATH := device/motorola/nio
 
 # Display
-TARGET_SCREEN_DENSITY := 420
-
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.racer
-TARGET_USES_FOD_ZPOS := true
+TARGET_SCREEN_DENSITY := 480
 
 # FM
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/racer_defconfig
+BOARD_BOOT_HEADER_VERSION := 3
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+TARGET_KERNEL_CONFIG := vendor/nio_defconfig
 
-# Kernel modules - Audio
-TARGET_MODULE_ALIASES += \
-    snd-soc-aov-trigger.ko:aov_trigger.ko \
-    snd-soc-cs35l41-spi.ko:cirrus_cs35l41-spi.ko \
-    snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
-    snd-soc-cs47l35.ko:cirrus_cs47l35.ko \
-    snd-soc-madera.ko:cirrus_madera.ko \
-    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
-    irq-madera.ko:cirrus_irq-madera.ko
+# NFC
+TARGET_USES_NQ_NFC := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
