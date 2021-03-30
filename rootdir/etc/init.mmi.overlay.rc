@@ -31,7 +31,7 @@ on fs
    insmod /vendor/lib/modules/sx933x_sar.ko
    insmod /vendor/lib/modules/stmvl53l1.ko
    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules aw882xx_k419.ko aw8695.ko
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules aw882xx_k419.ko aw8695.ko ets_fps.ko
 
 on post-fs
    # "double tap" gesture
