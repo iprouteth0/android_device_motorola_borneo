@@ -16,8 +16,10 @@
 */
 -->
 <resources>
-    <dimen name="system_icons_keyguard_padding_end">16dp</dimen>
-
-    <!-- the padding on the end of the statusbar -->
+    <dimen name="keyguard_carrier_text_margin">245px</dimen>
     <dimen name="status_bar_padding_end">12dp</dimen>
+    <dimen name="status_bar_padding_start">240px</dimen>
+    <dimen name="status_bar_padding_top">42px</dimen>
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+    <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 </resources>
