@@ -7,7 +7,7 @@ Basic   | Spec Sheet
 CPU     | Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585)
 CHIPSET | Qualcomm SM8250 Snapdragon 870
 GPU     | Adreno 650
-Memory  | 8 / 12GB
+Memory  | 6 / 8 / 12GB
 Shipped Android Version | 11
 Storage | 128 / 256GB
 Battery | 5000 mAh
