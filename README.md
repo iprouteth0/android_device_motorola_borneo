@@ -1,19 +1,19 @@
-# TWRP Device configuration for Motorola Edge
+# Device configuration for Motorola Edge S / Moto G100
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (1x2.4 GHz Kryo 475 Prime & 1x2.2 GHz Kryo 475 Gold & 6x1.8 GHz Kryo 475 Silver)
-CHIPSET | Qualcomm SM7250 Snapdragon 765G
-GPU     | Adreno 620
-Memory  | 4 / 6GB
-Shipped Android Version | 10
-Storage | 128GB
-Battery | 4500 mAh
-Dimensions | 161.6 x 71.1 x 9.3 mm
-Display | 1080 x 2340 pixels, 6.7" OLED, 90Hz, HDR10
-Rear Camera  | 64 MP (f/1.8) + 8 MP (f/2.4) + 16 MP (f/2.2)
-Front Camera | 25 MP (f/2.0)
+CPU     | Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585)
+CHIPSET | Qualcomm SM8250 Snapdragon 870
+GPU     | Adreno 650
+Memory  | 8 / 12GB
+Shipped Android Version | 11
+Storage | 128 / 256GB
+Battery | 5000 mAh
+Dimensions | 168.4 x 74 x 9.7 mm
+Display | 1080 x 2520 pixels, 6.7" IPS, 90Hz, HDR10
+Rear Camera  | 64 MP (f/1.7) + 16 MP (f/2.2) + 2 MP (f/2.4) + TOF 3D
+Front Camera | 16 MP (f/2.2) + 8 MP (f/2.4)
 
-![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-midnight-magenta-1.jpg)
+![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g100-ofic-01.jpg)
