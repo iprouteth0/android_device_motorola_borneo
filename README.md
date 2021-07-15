@@ -1,19 +1,19 @@
-# Device configuration for Motorola Edge S / Moto G100
+# Device configuration for Motorola Borneo / Moto G power 2021
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585)
-CHIPSET | Qualcomm SM8250 Snapdragon 870
-GPU     | Adreno 650
-Memory  | 6 / 8 / 12GB
-Shipped Android Version | 11
-Storage | 128 / 256GB
+CPU     | Octa-core (4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)
+CHIPSET | Qualcomm SM6115 Snapdragon 662
+GPU     | Adreno 610
+Memory  | 4GB
+Shipped Android Version | 10
+Storage | 64GB
 Battery | 5000 mAh
-Dimensions | 168.4 x 74 x 9.7 mm
-Display | 1080 x 2520 pixels, 6.7" IPS, 90Hz, HDR10
-Rear Camera  | 64 MP (f/1.7) + 16 MP (f/2.2) + 2 MP (f/2.4) + TOF 3D
-Front Camera | 16 MP (f/2.2) + 8 MP (f/2.4)
+Dimensions | 165.3 x 75.9 x 9.5  mm
+Display | 720 x 1600  pixels, 6.6"  IPS, 60Hz, HD+
+Rear Camera  | 64 MP (f/1.7) + 2 MP (f/2.4) + 2 MP (f/2.4)
+Front Camera | 8 MP (f/2.0)
 
-![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g100-ofic-01.jpg)
+![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g9-power-2021-2.jpg)
