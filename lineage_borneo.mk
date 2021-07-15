@@ -19,16 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from nio device
-$(call inherit-product, device/motorola/nio/device.mk)
+$(call inherit-product, device/motorola/borneo/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_nio
-PRODUCT_DEVICE := nio
+PRODUCT_NAME := lineage_borneo
+PRODUCT_DEVICE := borneo
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola Edge S
+PRODUCT_MODEL := Motorola G Power 2021
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -36,13 +36,13 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2520
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Build info
-BUILD_FINGERPRINT := "motorola/nio_retcn/nio:11/RRN31.Q1-20-17-1/1cbc0:user/release-keys"
+BUILD_FINGERPRINT := "motorola/borneo_retna/borneo:10/MMI-QZBS30.Q4-43-43-2/1cbc0:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=nio_retcn \
-    PRIVATE_BUILD_DESC="nio_retcn-user 11 RRN31.Q1-20-17-1 1cbc0 release-keys"
+    PRIVATE_BUILD_DESC="borneo_retna-user 11 MMI-QZBS30.Q4-43-43-2 1cbc0 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
