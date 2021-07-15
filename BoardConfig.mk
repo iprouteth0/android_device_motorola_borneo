@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
--include device/motorola/sm8250-common/BoardConfigCommon.mk
+-include device/motorola/sm6115-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/nio
+DEVICE_PATH := device/motorola/borneo
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -29,7 +29,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt
-TARGET_KERNEL_CONFIG := vendor/nio_defconfig
+TARGET_KERNEL_CONFIG := vendor/borneo_defconfig
 
 # NFC
 TARGET_USES_NQ_NFC := true
