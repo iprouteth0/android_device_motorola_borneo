@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nio.mk
+    $(LOCAL_DIR)/lineage_borneo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nio-eng \
-    lineage_nio-user \
-    lineage_nio-userdebug
+    lineage_borneo-eng \
+    lineage_borneo-user \
+    lineage_borneo-userdebug
