@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/motorola/sm8250-common/common.mk)
+$(call inherit-product, device/motorola/sm6115-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/nio/nio-vendor.mk)
+$(call inherit-product, vendor/motorola/borneo/borneo-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
